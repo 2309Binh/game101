@@ -25,35 +25,68 @@ For a complete list of available schematics (such as `components`, `directives`,
 ```bash
 ng generate --help
 ```
+````markdown
+# game
 
-## Building
+Nhỏ gọn: project Angular scaffolded bằng Angular CLI.
 
-To build the project run:
+Repository: https://github.com/2309Binh/game101
 
-```bash
-ng build
+## Yêu cầu
+- Node.js (khuyến nghị dùng một phiên bản LTS như 18.x/20.x/24.x)
+- npm (đi kèm với Node)
+
+> Lưu ý: trên máy hiện tại Node v25 đã được dùng — build vẫn chạy nhưng nên chuyển về LTS cho production.
+
+## Chạy phát triển (PowerShell)
+
+Mở terminal tại thư mục project:
+
+```powershell
+cd C:\Users\Admin\angularTesting\game101\game
+npm install
+npm start
+# Hoặc
+npx ng serve --open
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Ứng dụng sẽ chạy mặc định tại http://localhost:4200/.
 
-## Running unit tests
+## Build để deploy
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```powershell
+cd C:\Users\Admin\angularTesting\game101\game
+npm run build
 ```
 
-## Running end-to-end tests
+Kết quả build sẽ nằm trong `dist/game`.
 
-For end-to-end (e2e) testing, run:
+## Test
 
-```bash
-ng e2e
+Chạy unit tests:
+
+```powershell
+npm test
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Thêm & phát triển
 
-## Additional Resources
+- Tạo component mới: `npx ng generate component my-component`
+- Chạy linter / format theo cấu hình nếu cần.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribute & GitHub
+
+Repo remote đã được thiết lập: `https://github.com/2309Binh/game101.git`
+
+Gợi ý merge/pull request: https://github.com/2309Binh/game101/pull/new/master
+
+## CI / Next steps
+
+- Nếu muốn tôi có thể tạo sẵn workflow GitHub Actions để chạy `npm ci` + `npm run build` trên mỗi push.
+- Nên chuyển sang branch `main` nếu bạn dùng convention `main` (hiện project đang dùng `master`).
+
+## License
+
+MIT (nếu bạn muốn đổi, cho biết license bạn muốn).
+
+````
