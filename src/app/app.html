@@ -9,8 +9,19 @@
 
 
 <main class="main">
-  <div>
+  <div class ="conatainer">
+     <h1>Guess the NUmber</h1>
+     <p class="message">{{ message }}</p>
+
+     <div class="controls">
+       <input type="number" [(ngModel)]="guess" min="1" [max]="max" placeholder="Enter a number" />
+       <button (click)="check()">Guess</button>
+       <button (click)="reset">Reset</button>
     </div>
+
+    <p> class = "attempts">Attepmts: {{attempts}} </p>
+    <p class= "hint">(Secret number is between 1 and {{ mã }}) </p>
+  </div>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -1,0 +1,36 @@
+.main{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 24px; /* khoảng trống bên trong */
+}
+
+.container {
+    max-width: 560px;/*độ rộng tối đa*/
+    margin: 24px auto;/* Căn giữa khung theo chiều ngang và tạo khoảng cách trên/dưới */
+    padding: 18px; /* Khoảng trống bên trong khung */
+    border-radius: 8px;/* Bo tròn các góc khung */
+    background: #f8fafc; /* Màu nền xám nhạt */
+    box-shadow: 0 2px 10px rgba(2,6,23,0.06);
+    text-align: center; /* Căn giữa toàn bộ nội dung bên trong */
+}
+
+input[type="number"] {
+  padding: 8px;
+  width: 160px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(0.95); }
+
+.message { font-weight: 600; }
+.attempts { margin-top: 10px; color: #374151; }
+.hint { color: #6b7280; font-size: 0.9rem; }
