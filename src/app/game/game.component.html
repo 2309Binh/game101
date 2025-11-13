@@ -1,0 +1,16 @@
+<section class="game-root">
+  <header class="game-header">
+    <h2>Anomalie-Jäger — Demo</h2>
+    <div class="hud">Score: {{score}} · Wave: {{wave}}</div>
+  </header>
+
+  <div class="game-area">
+    <!-- Canvas for the game; the component will size the canvas in code -->
+    <canvas #canvas class="game-canvas" tabindex="0"></canvas>
+  </div>
+
+  <footer class="game-controls">
+    <button (click)="start()" [disabled]="running">Start</button>
+    <button (click)="reset()">Reset</button>
+  </footer>
+</section>
